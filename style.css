@@ -1,0 +1,562 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    padding-top: 1px;
+}
+#nav{
+    height: 11vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h1{
+    /* background-color: blue; */
+    width: 22%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:monument;
+    font-size: 45px;
+    letter-spacing: -1px;
+    position: relative;
+}
+#nav h1::after{
+    content: "©";
+    font-weight: 400;
+    font-family: gilroy;
+    font-size: 22px;
+    position: absolute;
+    top: 20%;
+    right: 4%;
+}
+#nav h1::before{
+    content: "model managment";
+    font-weight: 400;
+    font-family: gilroy;
+    letter-spacing: 0.1px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 10%;
+    right: 18%;
+}
+#nav h2{
+    /* background-color: blue; */
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 26px;
+    font-weight: 600;
+}
+#nav h3{
+    display: none;
+}
+#nav h2:nth-last-child(1){
+    width: 10%;
+}
+#nav h2:nth-last-child(2){
+    width: 29%;
+}
+#center{
+    width: 100%;
+    height: 90%;
+    /* background-color: red; */
+    padding: 4vw;
+    position: relative;
+}
+#content{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    position: relative;
+}
+ #content video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+#overlay{
+    width: 100%;
+    height: 52%;
+    /* background-color: red; */
+    bottom: 0;
+    position: absolute;
+    padding: 3vw;
+    color: #f8f8f8;
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+#over1 h1{
+    font-family: monument;
+    font-size: 3.6vw;
+}
+#over1 h2{
+    font-size: 1.2vw;
+    padding: 2vw 2.2vw;
+    border-radius: 50%;
+    border: 2px solid #f8f8f8;
+
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #f8f8f8;
+    padding: 1.5vw o;
+}
+#over2 h4{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+#over img{
+    height: 3vw;
+}
+
+#scroll{
+    width: 100%;
+    height: 40vh;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden; 
+}
+#container{
+    width: 110%;
+    height: 100%;
+    /* background-color: blue; */
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    /* display: none; */
+    height: 95%;
+    border-radius: 50%;
+    width: 15%;
+    margin: 1vw;
+    object-fit: cover;
+    object-position: 30% 30%;
+}
+
+@keyframes anime{
+    from{
+        transform: translateX(o);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+
+}
+
+#alphabet{
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;;
+    
+
+}
+#alphabet h5{
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    font-weight: 400;
+     border-bottom: 2px solid black;
+    font-style: italic;
+    letter-spacing: 4px;
+    margin-right: 2vw;
+}
+#alphabet h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #00000000;
+    transition: all ease 0.2s;
+
+}
+#alphabet h6:hover{
+    border: 1px solid #000;
+}
+
+#page2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+#page2-part1{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9kZWx8ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    background-position: center;
+}
+#page2-part2{
+    height: 100%;
+    width: 46%;
+}
+#page2-part2 img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#write h5{
+    font-size: 3vh;
+    margin-top: 5%;
+    font-weight: 600;
+
+}
+#write p{
+    font-size: 1.2vw;
+    margin-left: 40%;
+    margin-top: -20%;
+    font-weight: 100;
+}
+#text{
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+#text h6{
+    font-size: 2.8vw;
+    font-weight: 600;
+    padding: 0px 80px;
+    margin-bottom: 20px;
+    font-family: monument;
+}
+#logo{
+    width: 100%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+}
+
+#logo1{
+   
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+}
+#logo1 img{
+    width: 50%;
+    height: 50%;
+   margin-top: 25px;
+   margin-left: 60px;
+
+
+}
+#logo1 p{
+    margin-top: 14vw;
+    font-size: 3vh;
+    padding: 20px 70px;
+    font-weight: 500;
+}
+#logo2 {
+    width: 50%;
+    height: 100%;
+}
+#logo2 img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 0 70px;
+    object-fit: cover;
+}
+
+#center2{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+#center2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 4vw;
+}
+
+#page3{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    position: relative;
+    padding: 5vw 4vw;
+
+}
+#page3>h1{
+    text-align: center;
+    font-family: monument;
+    text-transform: uppercase;
+    font-size: 3vw;
+    /* font-weight: 800; */
+    margin-bottom: 7vh;
+
+}
+.elem{
+    height: 15.5vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+}
+.elem img{
+    width: 115px;
+    height: 115px;
+    position: absolute;
+    border-radius: 50%;
+    left: 12%;
+    opacity: 0;
+    transition: all ease 0.7s;
+}
+
+.elem h4{
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    width: 6%;
+    font-weight: 500;  
+}
+.elem .elem-part2{
+    width: 45%;
+}
+.elem .elem-part2 h1{
+    font-size: 2.7vw;
+    font-weight: 500;
+}
+.elem .elem-part2 h5{
+    font-size: 0.9vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+
+}
+.elem:nth-last-child(3) img{
+    left: 40%;
+}
+.elem:nth-last-child(1) img{
+    left: 40%;
+}
+.elem:hover img{
+    opacity: 1;
+    left: 24%;
+}
+#marque{
+    /* height: 20vh; */
+    width: 100%;
+    /* background-color: red; */
+    padding: 0.8vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+   
+    
+}
+#marque h1{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 900;
+    font-family: monument;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    margin-right: 16px;
+    letter-spacing: 3px;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+
+}
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+     to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+#footer{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media (max-width:600px) {
+
+    #body{
+        overflow-x: hidden;
+    }
+
+    #nav{
+    height: 8vh;
+    margin-top: 20px;
+    padding: 0 5vw;
+    }
+#nav h1{
+    width: 40%;
+    justify-content: flex-start;
+    font-size: 24px;
+}
+#nav h3{
+    display: block;
+}
+#nav h1::after{
+
+    display: none;
+}
+#nav h1::before{
+  
+    display: none;
+}
+#nav h2{
+    
+    display: none;
+}
+
+
+#center{
+    width: 100%;
+    height: 40%;
+    /* background-color: red; */
+    padding: 4vw;
+    position: relative;
+}
+#content{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    position: relative;
+}
+ #content video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+#overlay{
+    width: 100%;
+    height: fit-content;
+    /* background-color: red; */
+    bottom: 0;
+    position: absolute;
+    padding: 3vw;
+    color: #f8f8f8;
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+#over1 h1{
+    font-family: monument;
+    font-size: 5.5vw;
+    font-weight: 100;
+}
+#over1 h2{
+    font-size: 2vw;
+    padding: 3vw 3.2vw;
+    border-radius: 50%;
+    border: 2px solid #f8f8f8;
+
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #f8f8f8;
+    padding: 1.5vw o;
+}
+#over2 h4{
+    font-size: 3.3vw;
+    font-weight: 500;
+}
+#over img{
+    height: 5vw;
+}
+
+}
+#scroll{
+    width: 100%;
+    height: 20vh;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden; 
+}
+#container{
+    width: 210%;
+    height: 100%;
+    /* background-color: blue; */
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    /* display: none; */
+    height: 95%;
+    border-radius: 50%;
+    width: 15.5%;
+    margin: 1vw;
+    object-fit: cover;
+    object-position: 30% 30%;
+}
